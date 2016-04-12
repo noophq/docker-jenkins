@@ -1,6 +1,6 @@
 #! /bin/bash
 
-set -ex
+set -e
 
 # Copy files from /usr/share/jenkins/ref into $JENKINS_HOME
 # So the initial JENKINS-HOME is set with expected content.
