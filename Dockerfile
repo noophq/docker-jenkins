@@ -4,5 +4,7 @@ FROM jenkins:1.642.4
 USER root
 RUN chmod a+w $JAVA_HOME/jre/lib/security/cacerts
 
+ENV JENKINS_OPTS --httpsKeyStore=$JAVA_HOME/jre/lib/security/cacerts
+
 USER ${user}
 COPY jenkins.sh /usr/local/bin/jenkins.sh
