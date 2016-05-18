@@ -1,4 +1,4 @@
-FROM jenkins:2.0
+FROM jenkins:2.3
 
 # Give jenkins user the rights to import java certs
 # Need root permissions
